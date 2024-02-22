@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task1</title>
+    <style>
+        .tas{
+            background-color: rgb(180, 236, 236);
+            position: relative;
+            top: 10px;
+            height: 900px;
+            overflow: scroll;        
+        }
+        .i1:hover{
+    opacity: 1;
+    
+}
+    .i1{
+    top: 25px;
+    background-color:black;
+    color: gray;
+    font-size: 20px;
+    opacity: 0.6;
+    position: relative;
+    left: 20px;
+    display: grid;
+    width: 350px;
+    padding: 3px;
+    margin-top: -45px;
+}
+.i1:checked~.text{
+transform: rotate(0deg);
+}
+.i2:checked~.text{
+transform: rotate(10deg);
+}
+.i3:checked~.text{
+transform: rotate(45deg);
+}
+.i4:checked~.text{
+transform: rotateX(45deg);
+}
+.i5:checked~.text{
+transform: rotateX(100deg);
+}
+.i6:checked~.text{
+transform: rotateY(45deg);
+}
+.i7:checked~.text{
+transform: rotateY(80deg);
+}
+.i8:checked~.text{
+transform: skew(20deg,20deg);
+}
+.i9:checked~.text{
+transform: skew(30deg,30deg);
+}
+.i10:checked~.text{
+transform: skewX(30deg);
+}
+.i11:checked~.text{
+transform: skewX(40deg);
+}
+.i12:checked~.text{
+transform: skewY(30deg);
+}
+.i12:checked~.text{
+transform: skewY(40deg);
+}
+.i14:checked~.text{
+transform: translate(20px,10px);
+}
+.i15:checked~.text{
+transform: translate(20px,20px);
+}
+.i16:checked~.text{
+transform: scale(2,2);
+}
+.i17:checked~.text{
+transform: scale(2,3);
+}
+.i18:checked~.text{
+transform: matrix(0.866,0.7,-0.8,0.866,0,0);
+}
+.i19:checked~.text{
+transform: matrix(0.586,0.8,-0.8,0.586,0,0);
+}
+.i20:checked~.text{
+transform: matrix(0.586,0.8,-0.8,0.586,0,0);
+}
+
+p{
+display: inline;
+}
+.p1{
+    background-color: rgb(0, 0, 0);
+    color: pink;
+    height: 30px;
+    width: 300px;
+    display: grid;
+    align-content: center;
+    opacity: 0.7;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    position: absolute;
+    top: 20px;
+}
+.text {
+    background-color: lightblue;
+    width: 100px;
+    display: grid;
+     position: absolute;
+     padding: 10px;
+    top: 90px;
+    left: 490px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+    </style>
+</head>
+
+<body>
+    <div class="tas">
+       
+           <input type="radio" name="select" />
+             <p class="i1"> transform:&nbsp;none ;</p><br>
+            <input type="radio" class="i2" name="select"  value="10" />
+            <p class="i1">transform:&nbsp; rotate(10deg);</p><br>
+            <input type="radio" class="i3" name="select" value="45" />
+            <p class="i1">transform: &nbsp;rotate(45deg);</p><br>
+            <input type="radio" class="i4" name="select"/>
+            <p class="i1">transform:&nbsp; rotateX(45deg);</p><br>
+            <input type="radio" class="i5" name="select">
+            <p class="i1">transform:&nbsp;rotateX(100deg);</p><br>
+            <input type="radio" class="i6" name="select">
+            <p class="i1">transform:&nbsp; rotateY(45deg);</p><br>
+            <input type="radio" class="i7" name="select" />
+            <p class="i1"> transform:&nbsp;rotateY(80deg);</p><br>
+           <input type="radio" class="i8" name="select"  value="10" />
+           <p class="i1">transform:&nbsp;skew(20deg,20deg);</p><br>
+           <input type="radio" class="i9" name="select" value="45" />
+           <p class="i1">transform: &nbsp;skew(30deg,30deg);</p><br>
+           <input type="radio" class="i10" name="select"/>
+           <p class="i1">transform:&nbsp; skewX(30deg);</p><br>
+           <input type="radio" class="i11" name="select">
+           <p class="i1">transform:&nbsp; skewX(40deg);</p><br>
+           <input type="radio" class="i12" name="select">
+           <p class="i1">transform:&nbsp;skewY(30deg);</p><br>
+           <input type="radio" class="i13" name="select" />
+           <p class="i1"> transform:&nbsp;skewY(40deg);;</p><br>
+          <input type="radio" class="i14" name="select"  value="10" />
+          <p class="i1">transform:&nbsp; translate(20px,10px);</p><br>
+          <input type="radio" class="i15" name="select" value="45" />
+          <p class="i1">transform: &nbsp;translate(20px,20px);</p><br>
+          <input type="radio" class="i16" name="select"/>
+          <p class="i1">transform:&nbsp;scale(2,2);</p><br>
+          <input type="radio" class="i17" name="select">
+          <p class="i1">transform:&nbsp;scale(2,3);</p><br>
+          <input type="radio" class="i18" name="select">
+          <p class="i1">transform:&nbsp;matrix(0.866,0.7,-0.8,0.866,0,0);</p><br>
+          <input type="radio" class="i18" name="select">
+          <p class="i1">transform:&nbsp;matrix(0.586,0.8,-0.8,0.586,0,0);</p><br>
+          <input type="radio" class="i18" name="select">
+          <p class="i1">transform:&nbsp;matrix(0.586,0.8,-0.8,0.586,0,0);</p>
+
+            <p class="text">See what different transform values does with this blue DIV element.</p>
+ 
+        </div>
+</body>
+
+</html>
